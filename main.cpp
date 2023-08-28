@@ -1,67 +1,53 @@
 #include <iostream>
+#include <map>
 #include <string>
+
 using namespace std;
 
 int main()
 {
 
-   // for(int i =0; i < 5; i++)
-    {
-       // cout << "i is " << i;
-    }
+    map<string, string> myDictionary;
+    myDictionary.insert(pair<string,string>("apple", "der Apfel"));
+    myDictionary.insert(pair<string,string>("banana", "die Banane"));
+    myDictionary.insert(pair<string,string>("orange", "die Orange, Die Apfelsine"));
+    myDictionary.insert(pair<string,string>("strawberry", "die Erdbeere"));
 
-    //int i = 0;
+    for (auto pair : myDictionary) {
 
-   // while(i < 100000)
-    {
-
-        //cout << i;
-        //i++;
-        //system("pause");
+        cout << pair.first << " - " << pair.second << endl;
     }
 
 
-    //string myStr;
+    map < char, int> myKeyNumber;
 
-    //myStr = "abcdefghij";
+    myKeyNumber.insert (pair<char,int>('a', 4));
+    myKeyNumber.insert (pair<char,int>('b', 3));
+    myKeyNumber.insert (pair<char,int>('c', 2));
+    myKeyNumber.insert (pair<char,int>('d', 5));
 
-    //string mySubString = myStr.substr (0, 20);
-   // for(int i = 0; i < 10; i++){
+    for (auto pair: myKeyNumber){
 
-        //cout << myStr.at(i) << "\n";
-    //}
-
-
-    //for (int i = 9; i >= 0; i--){
-
-        //cout << myStr.at(i) << "\n";
-   // }
-
-    //ChatGPT
-
-    //for (char c = 'a'; c <= 'j'; ++c){
-        //cout << c;
-    //}
-    //cout << endl;
-
-    char myChars[10] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',};
-
-
-    for (int i = 0; i < 10; i++){
-        cout << "myChars[" << i << "] is " << myChars[i] << "\n\n";
+        cout << pair.first << " - " << pair.second <<endl;
     }
 
-    int num1 = 100;
-    int num2 = 33;
+    map <string, int> myDictionary01;
+    myDictionary01.insert(pair <string, int>("e", 7));
+    myDictionary01.insert(pair <string, int>("f", 8));
+    myDictionary01.insert(pair <string, int>("g", 9));
+    myDictionary01.insert(pair <string, int>("h", 10));
 
-    if( num1 > num2){
-        cout << "\n The text condition was true";
+    for (auto pair: myDictionary01){
+
+        cout << pair.first << " - " << pair.second << endl;
+
     }
-        else{
-            cout << "\n The test condition evaluated to false";
-        }
+
+
+
+
+
+
+
     return 0;
-
-
-
 }
