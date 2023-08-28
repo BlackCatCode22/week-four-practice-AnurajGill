@@ -1,53 +1,67 @@
 #include <iostream>
-#include <map>
 #include <string>
-
 using namespace std;
 
 int main()
 {
 
-    map<string, string> myDictionary;
-    myDictionary.insert(pair<string,string>("apple", "der Apfel"));
-    myDictionary.insert(pair<string,string>("banana", "die Banane"));
-    myDictionary.insert(pair<string,string>("orange", "die Orange, Die Apfelsine"));
-    myDictionary.insert(pair<string,string>("strawberry", "die Erdbeere"));
+   // for(int i =0; i < 5; i++)
+    {
+       // cout << "i is " << i;
+    }
 
-    for (auto pair : myDictionary) {
+    //int i = 0;
 
-        cout << pair.first << " - " << pair.second << endl;
+   // while(i < 100000)
+    {
+
+        //cout << i;
+        //i++;
+        //system("pause");
     }
 
 
-    map < char, int> myKeyNumber;
+    //string myStr;
 
-    myKeyNumber.insert (pair<char,int>('a', 4));
-    myKeyNumber.insert (pair<char,int>('b', 3));
-    myKeyNumber.insert (pair<char,int>('c', 2));
-    myKeyNumber.insert (pair<char,int>('d', 5));
+    //myStr = "abcdefghij";
 
-    for (auto pair: myKeyNumber){
+    //string mySubString = myStr.substr (0, 20);
+   // for(int i = 0; i < 10; i++){
 
-        cout << pair.first << " - " << pair.second <<endl;
+        //cout << myStr.at(i) << "\n";
+    //}
+
+
+    //for (int i = 9; i >= 0; i--){
+
+        //cout << myStr.at(i) << "\n";
+   // }
+
+    //ChatGPT
+
+    //for (char c = 'a'; c <= 'j'; ++c){
+        //cout << c;
+    //}
+    //cout << endl;
+
+    char myChars[10] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',};
+
+
+    for (int i = 0; i < 10; i++){
+        cout << "myChars[" << i << "] is " << myChars[i] << "\n\n";
     }
 
-    map <string, int> myDictionary01;
-    myDictionary01.insert(pair <string, int>("e", 7));
-    myDictionary01.insert(pair <string, int>("f", 8));
-    myDictionary01.insert(pair <string, int>("g", 9));
-    myDictionary01.insert(pair <string, int>("h", 10));
+    int num1 = 100;
+    int num2 = 33;
 
-    for (auto pair: myDictionary01){
-
-        cout << pair.first << " - " << pair.second << endl;
-
+    if( num1 > num2){
+        cout << "\n The text condition was true";
     }
-
-
-
-
-
-
-
+        else{
+            cout << "\n The test condition evaluated to false";
+        }
     return 0;
+
+
+
 }
